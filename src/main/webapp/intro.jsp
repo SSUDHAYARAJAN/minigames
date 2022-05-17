@@ -14,8 +14,7 @@ String name=request.getParameter("username");
 </head>
 <body>
 
-    <?
-    ?>
+
     <p id="para"></p>
     <div class='header'>
         <h1>Mini games<h1>
@@ -35,7 +34,7 @@ String name=request.getParameter("username");
           <div  class="box2">
               <!--<p>snake and ladder</p>-->
               <form action="snakegame.jsp" method="get">
-                   <input type="text"  hidden style="height:0px; width:0px; color:black;" name="uname" value="<%=name%>">
+                   <input type="text" hidden style="height:0px; width:0px; color:black;" name="uname" value="<%=name%>">
                     <input type="submit" value="SnakeGame">
                </form>
 
