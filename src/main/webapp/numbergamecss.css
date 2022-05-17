@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 70vh;
+    background: #1d1f20;
+    color:white;
+  }
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+
+  section{
+    border: 6px double white;
+    border-image: linear-gradient(to left,purple, magenta,blue);
+    border-image-slice: 1;
+    padding: 10px;
+  }
+  section > div{
+    margin: 5px;
+    height: 4em;
+    width: 10em;
+    border-radius: 5px;
+  }
+  .score-container{
+    background: olive;
+    background-image:linear-gradient(to right,pink,blue);
+  }
+  div.problem{
+    background: #86b38a;
+    background-image:linear-gradient(blue ,magenta);
+  }
+  p.main{
+    font-size: 1.4rem;
+    margin: 5px;
+  }
+  p.label{
+    font-size: 0.8rem;
+    margin: 2px;
+  }
+  .lights{
+    flex-flow: row nowrap;
+  }
+  .light{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+  #green-light::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #00ff00aa;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+  #red-light::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #ff0000aa;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+  }
+
+  .white{
+    background: white;
+  }
+
+
+
+  button{
+      border: 2px solid #42964c;
+      background-color: #86b38a;
+      color: white;
+      border-radius: 10px;
+      padding: 0.5em;
+      font-size: 1.4rem;
+      cursor: pointer;
+      box-shadow: 0 5px 0 white;
+      transition-duration: 0.2s;
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      background-image:linear-gradient(blue,purple);
+      outline: 0;
+    }
+
+  button:hover{
+      transform: translateY(5px);
+      box-shadow: 0 0 0 #42964c;
+  }
+
+  button:active{
+    transform: scale(0.8);
+  }
+
+  .slide-container{
+    position: relative;
+    overflow: hidden;
+  }
+  .slide-cover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition-duration: 0.2s;
+    transform: translateY(0);
+  }
+  .slid-up{
+    transform: translateY(-120%);
+  }
+
+  #timer-slide{
+    background-image:linear-gradient(to right,purple 10%, magenta 30%,blue);
+  }
+  .questioncount
+  {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+  #qc
+  {
+    color:magenta;
+    font-size:18px;
+  }
