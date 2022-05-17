@@ -48,12 +48,7 @@
       input{
           width: 85%;
       }
-      marquee{
-          height: 20px;
-          width: 45px;
-          color: blue;
 
-      }
 
  </style>
  </head>
