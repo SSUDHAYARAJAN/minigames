@@ -55,11 +55,7 @@
 
             <script src="numbergamejs.js"></script>
 
-<%
-    int finalscore=%>document.getElementByID("score")<?;
-    //out.println(finalscore);
-    ?>
-<%
+
 
 </body>
 
