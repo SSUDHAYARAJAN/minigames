@@ -1,6 +1,5 @@
 
 <html lang="en">
-<head>
 
   <link rel="stylesheet" href="numbergamecss.css">
 </head>
