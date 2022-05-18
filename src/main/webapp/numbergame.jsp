@@ -50,13 +50,9 @@
              </div>
            </section>
 
-
            <p class='label'>(To Answer Use the Numbers on Keyboard)</p>
 
             <script src="numbergamejs.js"></script>
-
-
-
 </body>
 
 
