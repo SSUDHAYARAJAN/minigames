@@ -32,8 +32,13 @@
            </div>
            <div class='score-container'>
              <p class='label'>SCORE</p>
+             <p id="score" name="pscore" class='main'></p>
 
-            <p id="score" name="Mscore" class='main'></p>
+            <form action="getmathscore" method="post">
+            <input type"text"  value=pscore.value name="Mscore"></input>
+            <input type="submit" value="back">
+            </form>
+
             <!--<form action="savemathscore">
             <input type="number" hidden name="Mscore" id="score">
             <input type="submit" >-->
@@ -45,11 +50,16 @@
              </div>
            </section>
 
+
            <p class='label'>(To Answer Use the Numbers on Keyboard)</p>
 
             <script src="numbergamejs.js"></script>
 
-
+<%
+    int finalscore=%>document.getElementByID("score")<?;
+    //out.println(finalscore);
+    ?>
+<%
 
 </body>
 
